@@ -48,41 +48,44 @@ html
                                 option В наличии
                                 option
                         input(type="submit" value="")
-        section
+        section.main-content
             nav
-                img(src="" alt="back")
-                a(href="#") Назад
-                p Главная &gt; Каталог товаров &gt; Компьютерная техника
-            article
-                img(src="" alt="slider")
-            article
+                a(href="#").back Назад
+                p
+                    a(href="#") Главная
+                    | &gt;
+                    a(href="#") Каталог товаров
+                    | &gt;
+                    a(href="#") Компьютерная техника
+            img(src="" alt="slider")#slider-image
+            article.brands
                 header
                     h3 Выбор по бренду
                     a(href="#") все бренды
                 p
                     - for (var i = 0; i < 7*3; i++)
                         img(src="" alt="img")
-            article
+            article.promotions
                 header
                     h3 Акционные предложения
                     a(href="#") все акции
                 p
-                    img(src="" alt="previous")
+                    a(href="#").previous-promotion
                     - for (var i = 0; i < 5; i++)
-                        div
+                        div.card
                             img(src="" alt="img")
-                            p text
-                    img(src="" alt="next")
+                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aspernatur doloremque soluta consequuntur vel a ex esse
+                    a(href="#").next-promotion
                 footer
                     p 1 - 5 из 21
-            article
+            article.reviews
                 header
                     h3 Обзоры
                     a(href="#") все обзоры
                 p
                     - for (var i = 0; i < 3; i++)
-                        div
-                            img(src="" alt="img")
-                            p text
-                            p time
-                                img(src="" alt="rate")
+                        div.single-review
+                            img(src="" alt="img").item-img
+                            div
+                                h4  Lorem ipsum dolor sit amet
+                                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ea neque reprehenderit harum blanditiis voluptatem minima nam aliquam similique laudantium minus ducimus, iste soluta eveniet ipsa distinctio ut ad modi!

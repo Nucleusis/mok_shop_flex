@@ -223,3 +223,107 @@
     background-repeat: no-repeat; }
 
 /* Header end */
+/* Section */
+section.main-content {
+  padding: 0;
+  margin: 0; }
+  section.main-content nav {
+    min-height: 2em; }
+    section.main-content nav .back::before {
+      content: "";
+      background-image: url("img/back-icon.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 10px;
+      height: 10px;
+      display: inline-block;
+      margin: auto 5px;
+      position: relative;
+      top: 2px;
+      top: 0; }
+    section.main-content nav p {
+      border-left: 1px solid black;
+      display: inline-block;
+      margin: 5px 0; }
+    section.main-content nav a {
+      padding: 0px 8px;
+      text-decoration: none;
+      color: black;
+      display: inline-block; }
+      section.main-content nav a:hover {
+        text-decoration: underline; }
+  section.main-content #slider-image {
+    width: 100%;
+    height: 100px;
+    margin: 5px 0; }
+  section.main-content article {
+    border: 1px solid #777777;
+    margin: 10px 0; }
+  section.main-content header {
+    border-bottom: 1px solid #777777;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 0.5em; }
+    section.main-content header h3 {
+      margin: 0;
+      text-align: center;
+      font-weight: normal;
+      font-family: sans-serif; }
+  section.main-content .brands img {
+    width: 100px;
+    height: 50px;
+    margin: 2px; }
+  section.main-content .promotions .previous-promotion {
+    content: "";
+    background-image: url("img/previous-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    margin: auto 5px;
+    position: relative;
+    top: 2px;
+    top: 0; }
+  section.main-content .promotions .next-promotion {
+    content: "";
+    background-image: url("img/next-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    margin: auto 5px;
+    position: relative;
+    top: 2px;
+    top: 0; }
+  section.main-content .promotions .card {
+    width: 110px;
+    display: inline-block; }
+  section.main-content .promotions img {
+    width: 110px;
+    height: 80px; }
+  section.main-content .promotions footer {
+    text-align: center;
+    margin-bottom: -0.6em; }
+    section.main-content .promotions footer p {
+      background-color: #dddddd;
+      display: inline-block;
+      padding: 2px 10px;
+      margin: 0;
+      height: 1.2em; }
+  section.main-content .reviews .single-review div {
+    display: inline-block;
+    width: 80%; }
+  section.main-content .reviews .item-img {
+    width: 60px;
+    height: 60px; }
+  section.main-content .reviews h4 {
+    margin: 5px 0; }
+  section.main-content .reviews p {
+    margin: 5px 0; }
+
+/* Section end */

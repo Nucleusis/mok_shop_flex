@@ -183,4 +183,81 @@
             background-size: 18px 18px
             background-repeat: no-repeat
 
-/* Header end
+/* Header end */
+
+/* Section */
+section.main-content
+    padding: 0
+    margin: 0
+    nav
+        min-height: 2em
+        .back::before
+            @include icon-pseudo-element("img/back-icon.png", 10px)
+            top: 0
+        p
+            border-left: 1px solid black
+            display: inline-block
+            margin: 5px 0
+        a
+            padding: 0px 8px
+            text-decoration: none
+            color: black
+            display: inline-block
+            &:hover
+                text-decoration: underline
+    #slider-image
+        width: 100%
+        height: 100px
+        margin: 5px 0
+    article
+        border: 1px solid #777777
+        margin: 10px 0
+    header
+        border-bottom: 1px solid #777777
+        background-color: #f1f1f1
+        margin: 0
+        padding: 0.5em
+        h3
+            margin: 0
+            text-align: center
+            font-weight: normal
+            font-family: sans-serif
+    .brands img
+        width: 100px
+        height: 50px
+        margin: 2px
+    .promotions
+        .previous-promotion
+            @include icon-pseudo-element("img/previous-icon.png", 36px)
+            top: 0
+        .next-promotion
+            @include icon-pseudo-element("img/next-icon.png", 36px)
+            top: 0
+        .card
+            width: 110px
+            display: inline-block
+        img
+            width: 110px
+            height: 80px
+        footer
+            text-align: center
+            margin-bottom: -0.6em
+            p
+                background-color: #dddddd
+                display: inline-block
+                padding: 2px 10px
+                margin: 0
+                height: 1.2em
+    .reviews
+        .single-review div
+            display: inline-block
+            width: 80%
+        .item-img
+            width: 60px
+            height: 60px
+        h4
+            margin: 5px 0
+        p
+            margin: 5px 0
+
+/* Section end */
