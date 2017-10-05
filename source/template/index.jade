@@ -48,3 +48,41 @@ html
                                 option В наличии
                                 option
                         input(type="submit" value="")
+        section
+            nav
+                img(src="" alt="back")
+                a(href="#") Назад
+                p Главная &gt; Каталог товаров &gt; Компьютерная техника
+            article
+                img(src="" alt="slider")
+            article
+                header
+                    h3 Выбор по бренду
+                    a(href="#") все бренды
+                p
+                    - for (var i = 0; i < 7*3; i++)
+                        img(src="" alt="img")
+            article
+                header
+                    h3 Акционные предложения
+                    a(href="#") все акции
+                p
+                    img(src="" alt="previous")
+                    - for (var i = 0; i < 5; i++)
+                        div
+                            img(src="" alt="img")
+                            p text
+                    img(src="" alt="next")
+                footer
+                    p 1 - 5 из 21
+            article
+                header
+                    h3 Обзоры
+                    a(href="#") все обзоры
+                p
+                    - for (var i = 0; i < 3; i++)
+                        div
+                            img(src="" alt="img")
+                            p text
+                            p time
+                                img(src="" alt="rate")
