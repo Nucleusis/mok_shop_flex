@@ -7,14 +7,48 @@
   </head>
   <body>
     <header class="main-header">
-      <header>
+      <header class="navbar">
         <nav class="main-nav"><a href="#">О Магазине</a><a href="#">Акции</a><a href="#">Доставка и Оплата</a><a href="#">Помощь</a><a href="#">Контакты</a></nav>
         <div class="nav-user">
-          <div class="drop-down"><img src="img/shop-icon.png" alt="shop" class="icon"/><a href="#">Мой магазин</a></div>
-          <div><img src="img/key-icon.png" alt="key" class="icon"/><a href="#">Вход</a></div>
+          <div class="drop-down-menu"><a href="#" class="shop-menu">Мой магазин</a>
+            <div class="drop-down-content"><a href="#">Мои заказы</a><a href="#">Мои акции</a><a href="#">Мой профиль</a></div>
+          </div><a href="#" class="enter">Вход</a>
         </div>
       </header>
-      <section></section>
+      <section><img src="" alt="logo" id="logo"/>
+        <article>
+          <div class="header-content">
+            <div class="select-place">
+              <select>
+                <option selected="selected">Днепропетровск</option>
+                <option>Киев</option>
+                <option>Львов</option>
+                <option>Харьков</option>
+              </select>
+            </div>
+            <div class="header-contacts">
+              <div><a href="#">Заказать звонок</a>
+                <p class="phone">0 800 555 00 55</p>
+              </div>
+              <div><a href="#">on-line чат</a>
+                <p class="phone">044 555 00 55</p>
+              </div>
+            </div>
+            <div id="header-cart"><a href="#">Корзина</a></div>
+          </div>
+          <form class="header-search">
+            <input type="text"/>
+            <div class="select-search">
+              <select>
+                <option selected="selected">Во всем каталоге</option>
+                <option>В наличии</option>
+                <option></option>
+              </select>
+            </div>
+            <input type="submit" value=""/>
+          </form>
+        </article>
+      </section>
     </header>
   </body>
 </html>

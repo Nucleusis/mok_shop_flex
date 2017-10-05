@@ -5,7 +5,7 @@ html
         link(rel="stylesheet" type="text/css" href="css/style.css")
     body
         header.main-header
-            header
+            header.navbar
                 nav.main-nav
                     a(href="#") О Магазине
                     a(href="#") Акции
@@ -13,10 +13,38 @@ html
                     a(href="#") Помощь
                     a(href="#") Контакты
                 div.nav-user
-                    div.drop-down
-                        img(src="img/shop-icon.png" class="icon" alt="shop")
-                        a(href="#") Мой магазин
-                    div
-                        img(src="img/key-icon.png" class="icon" alt="key")
-                        a(href="#") Вход
+                    div.drop-down-menu
+                        a(href="#").shop-menu Мой магазин
+                        div.drop-down-content
+                            a(href="#") Мои заказы
+                            a(href="#") Мои акции
+                            a(href="#") Мой профиль
+                    a(href="#" class="enter") Вход
             section
+                img(src="" alt="logo" id="logo")
+                article
+                    div.header-content
+                        div.select-place
+                            select
+                                option(selected) Днепропетровск
+                                option Киев
+                                option Львов
+                                option Харьков
+                        div.header-contacts
+                            div
+                                a(href="#") Заказать звонок
+                                p.phone 0 800 555 00 55
+
+                            div
+                                a(href="#") on-line чат
+                                p.phone 044 555 00 55
+                        div#header-cart
+                            a(href="#") Корзина
+                    form.header-search
+                        input(type="text")
+                        div.select-search
+                            select
+                                option(selected) Во всем каталоге
+                                option В наличии
+                                option
+                        input(type="submit" value="")
