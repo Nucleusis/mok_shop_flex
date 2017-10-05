@@ -384,3 +384,87 @@ section.main-content {
     align-items: center; }
 
 /* Section end */
+/* Aside */
+aside {
+  padding: 0;
+  margin: 0; }
+  aside article {
+    border: 1px solid #777777;
+    margin: 10px 0; }
+  aside header {
+    border-bottom: 1px solid #777777;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0.5em; }
+    aside header h3 {
+      margin: 0;
+      text-align: center;
+      font-weight: normal;
+      font-family: sans-serif; }
+
+.catalog header {
+  border: none;
+  margin: -1px -1px 0 -1px;
+  padding: 0; }
+  .catalog header h3 {
+    text-align: left;
+    padding: 0.5em; }
+  .catalog header h4 {
+    background-color: #dddddd;
+    display: block;
+    margin: 0;
+    padding: 0.5em;
+    font-weight: normal;
+    font-family: sans-serif;
+    position: relative; }
+  .catalog header h4::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #dddddd transparent; }
+.catalog nav, .catalog ul, .catalog li {
+  padding: 0;
+  margin: 0; }
+.catalog li {
+  display: block; }
+  .catalog li a {
+    display: block;
+    padding: 4px 10px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px #cccccc solid; }
+    .catalog li a:hover {
+      background-color: #cccccc; }
+.catalog li:last-of-type a {
+  border: none; }
+
+.top-sale img {
+  width: 150px;
+  height: 60px; }
+.top-sale button {
+  background-color: #cccccc;
+  border: none;
+  width: 100%;
+  height: 2em;
+  cursor: pointer;
+  border: 1px solid #cccccc; }
+  .top-sale button:hover {
+    border: 1px solid black; }
+
+.top-sale > div > div {
+  padding: 10px;
+  text-align: center; }
+  .top-sale > div > div p {
+    margin: 4px; }
+
+.top-sale > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+/* Aside end */

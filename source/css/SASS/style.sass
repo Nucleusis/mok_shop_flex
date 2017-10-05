@@ -312,3 +312,87 @@ section.main-content
         align-items: center
 
 /* Section end */
+
+/* Aside */
+
+aside
+    padding: 0
+    margin: 0
+    article
+        border: 1px solid #777777
+        margin: 10px 0
+    header
+        border-bottom: 1px solid #777777
+        background-color: #eeeeee
+        margin: 0
+        padding: 0.5em
+        h3
+            margin: 0
+            text-align: center
+            font-weight: normal
+            font-family: sans-serif
+.catalog
+    header
+        border: none
+        margin: -1px -1px 0 -1px
+        padding: 0
+        h3
+            text-align: left
+            padding: 0.5em
+        h4
+            background-color: #dddddd
+            display: block
+            margin: 0
+            padding: 0.5em
+            font-weight: normal
+            font-family: sans-serif
+            position: relative
+        h4::after
+            content: ""
+            position: absolute
+            bottom: 100%
+            left: 10%
+            margin-left: -10px
+            border-width: 10px
+            border-style: solid
+            border-color: transparent transparent #dddddd transparent
+    nav, ul, li
+        padding: 0
+        margin: 0
+    li
+        display: block
+        a
+            display: block
+            padding: 4px 10px
+            text-decoration: none
+            color: black
+            border-bottom: 1px #cccccc solid
+            &:hover
+                background-color: #cccccc
+    li:last-of-type a
+        border: none
+.top-sale
+    img
+        width: 150px
+        height: 60px
+    button
+        background-color: #cccccc
+        border: none
+        width: 100%
+        height: 2em
+        cursor: pointer
+        border: 1px solid #cccccc
+        &:hover
+            border: 1px solid black
+.top-sale > div > div
+    padding: 10px
+    text-align: center
+    p
+        margin: 4px
+.top-sale > div
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+
+/* Aside end */
