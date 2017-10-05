@@ -48,70 +48,71 @@ html
                                 option В наличии
                                 option
                         input(type="submit" value="")
-        section.main-content
-            nav
-                a(href="#").back Назад
-                p
-                    a(href="#") Главная
-                    | &gt;
-                    a(href="#") Каталог товаров
-                    | &gt;
-                    a(href="#") Компьютерная техника
-            img(src="" alt="slider")#slider-image
-            article.brands
-                header
-                    h3 Выбор по бренду
-                    a(href="#") все бренды
-                p
-                    - for (var i = 0; i < 7*3; i++)
-                        img(src="" alt="img")
-            article.promotions
-                header
-                    h3 Акционные предложения
-                    a(href="#") все акции
-                div
-                    a(href="#").previous-promotion
-                    - for (var i = 0; i < 5; i++)
-                        div.card
-                            img(src="" alt="img")
-                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit
-                    a(href="#").next-promotion
-                footer
-                    p 1 - 5 из 21
-            article.reviews
-                header
-                    h3 Обзоры
-                    a(href="#") все обзоры
-                div
-                    - for (var i = 0; i < 3; i++)
-                        div.single-review
-                            img(src="" alt="img").item-img
-                            div
-                                h4  Lorem ipsum dolor sit amet
-                                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ea neque reprehenderit harum blanditiis voluptatem minima nam aliquam similique laudantium minus ducimus, iste soluta eveniet ipsa distinctio ut ad modi!
-        aside
-            article.catalog
-                header
-                    h3 Каталог товаров
-                    h4 Компьютерная техника
+        div#main
+            section.main-content
                 nav
-                    ul
-                        - for (var i = 0; i < 18; i++)
-                            li
-                                a(href="#") goods
-            article.top-sale
-                header
-                    h3 Лидеры продаж
-                div
+                    a(href="#").back Назад
+                    p
+                        a(href="#") Главная
+                        | &gt;
+                        a(href="#") Каталог товаров
+                        | &gt;
+                        a(href="#") Компьютерная техника
+                img(src="" alt="slider")#slider-image
+                article.brands
+                    header
+                        h3 Выбор по бренду
+                        a(href="#") все бренды
+                    p
+                        - for (var i = 0; i < 7*3; i++)
+                            img(src="" alt="img")
+                article.promotions
+                    header
+                        h3 Акционные предложения
+                        a(href="#") все акции
                     div
-                        p HP Pavilion
-                        img(src="" alt="photo")
-                        p цена
-                            strong  4 999 грн.
-                        button Купить
+                        a(href="#").previous-promotion
+                        - for (var i = 0; i < 5; i++)
+                            div.card
+                                img(src="" alt="img")
+                                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit
+                        a(href="#").next-promotion
+                    footer
+                        p 1 - 5 из 21
+                article.reviews
+                    header
+                        h3 Обзоры
+                        a(href="#") все обзоры
                     div
-                        p HP Pavilion
-                        img(src="" alt="photo")
-                        p цена
-                            strong  4 999 грн.
-                        button Купить
+                        - for (var i = 0; i < 3; i++)
+                            div.single-review
+                                img(src="" alt="img").item-img
+                                div
+                                    h4  Lorem ipsum dolor sit amet
+                                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil ea neque reprehenderit harum blanditiis voluptatem minima nam aliquam similique laudantium minus ducimus, iste soluta eveniet ipsa distinctio ut ad modi!
+            aside
+                article.catalog
+                    header
+                        h3 Каталог товаров
+                        h4 Компьютерная техника
+                    nav
+                        ul
+                            - for (var i = 0; i < 18; i++)
+                                li
+                                    a(href="#") goods
+                article.top-sale
+                    header
+                        h3 Лидеры продаж
+                    div
+                        div
+                            p HP Pavilion
+                            img(src="" alt="photo")
+                            p цена
+                                strong  4 999 грн.
+                            button Купить
+                        div
+                            p HP Pavilion
+                            img(src="" alt="photo")
+                            p цена
+                                strong  4 999 грн.
+                            button Купить
