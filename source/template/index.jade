@@ -69,12 +69,12 @@ html
                 header
                     h3 Акционные предложения
                     a(href="#") все акции
-                p
+                div
                     a(href="#").previous-promotion
                     - for (var i = 0; i < 5; i++)
                         div.card
                             img(src="" alt="img")
-                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic aspernatur doloremque soluta consequuntur vel a ex esse
+                            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit
                     a(href="#").next-promotion
                 footer
                     p 1 - 5 из 21
@@ -82,7 +82,7 @@ html
                 header
                     h3 Обзоры
                     a(href="#") все обзоры
-                p
+                div
                     - for (var i = 0; i < 3; i++)
                         div.single-review
                             img(src="" alt="img").item-img
