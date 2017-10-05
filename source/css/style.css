@@ -1,3 +1,7 @@
+html {
+  margin: 0 auto;
+  max-width: 3000px; }
+
 /* Header */
 .main-header {
   border: 1px solid #777777; }
@@ -341,6 +345,7 @@ section.main-content {
 
 section.main-content {
   order: 2;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -475,5 +480,63 @@ aside {
 #main {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start; }
+
+/* Footer */
+body > footer {
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+  border: 1px solid #777777; }
+  body > footer article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start; }
+    body > footer article div {
+      margin-top: 5px; }
+    body > footer article h4 {
+      display: block;
+      margin: 0;
+      padding: 0.8em 5px;
+      font-family: sans-serif; }
+    body > footer article ul, body > footer article li {
+      padding: 0;
+      margin: 0; }
+    body > footer article li {
+      display: block; }
+    body > footer article a {
+      display: inline-block;
+      padding: 0px 5px;
+      text-decoration: none;
+      color: black; }
+      body > footer article a:hover {
+        text-decoration: underline; }
+  body > footer .mailing {
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    body > footer .mailing input[type="text"] {
+      flex: 1 1 auto;
+      border: 1px solid #777777;
+      height: 100%;
+      padding: 0 0.5em;
+      margin: 0; }
+    body > footer .mailing input[type="submit"] {
+      height: 100%;
+      padding: 0 1em;
+      margin: 0;
+      margin-left: -1px;
+      border: 1px solid #777777;
+      color: white;
+      background-color: #777777; }
+  body > footer footer {
+    margin-top: 20px;
+    text-align: center; }
+
+/* Footer end */
