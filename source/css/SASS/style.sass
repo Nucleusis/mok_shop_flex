@@ -125,7 +125,7 @@ html
             justify-content: center
             align-items: stretch
             input[type="text"]
-                flex: 10 1 auto
+                flex: 1 1 auto
             .select-search
                 flex: 0 0 auto
             input[type="submit"]
@@ -158,7 +158,6 @@ html
     input[type="text"]
         border: 1px solid #777777
         height: 100%
-        width: 100%
         padding: 0 0.5em
     .select-search
         box-sizing: border-box
@@ -185,6 +184,13 @@ html
             background-position: center
             background-size: 18px 18px
             background-repeat: no-repeat
+            cursor: pointer
+            &:hover
+                border: 1px solid black
+                background-color: #eeeeee
+            &:active
+                border: 1px solid black
+                background-color: #f0f0f0
 
 /* Header end */
 
@@ -251,7 +257,7 @@ section.main-content
         height: 80px
     footer
         text-align: center
-        margin-bottom: -0.6em
+        margin-bottom: -0.7em
         p
             background-color: #dddddd
             font-family: sans-serif
@@ -393,6 +399,10 @@ aside
         border: 1px solid #cccccc
         &:hover
             border: 1px solid black
+            background-color: #b0b0b0
+        &:active
+            border: 1px solid black
+            background-color: #dddddd
 .top-sale > div > div
     padding: 10px
     text-align: center
@@ -424,6 +434,8 @@ body > footer
         flex-direction: row
         justify-content: space-around
         align-items: flex-start
+        flex-wrap: wrap
+        align-content: flex-start
         div
             margin-top: 5px
         h4
@@ -465,6 +477,13 @@ body > footer
             border: 1px solid #777777
             color: white
             background-color: #777777
+            cursor: pointer
+            &:hover
+                border: 1px solid black
+                background-color: #555555
+            &:active
+                border: 1px solid black
+                background-color: #888888
     footer
         margin-top: 20px
         text-align: center

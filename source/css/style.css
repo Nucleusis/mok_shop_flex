@@ -143,7 +143,7 @@ html {
       justify-content: center;
       align-items: stretch; }
       .main-header section article .header-search input[type="text"] {
-        flex: 10 1 auto; }
+        flex: 1 1 auto; }
       .main-header section article .header-search .select-search {
         flex: 0 0 auto; }
       .main-header section article .header-search input[type="submit"] {
@@ -197,7 +197,6 @@ html {
   .header-search input[type="text"] {
     border: 1px solid #777777;
     height: 100%;
-    width: 100%;
     padding: 0 0.5em; }
   .header-search .select-search {
     box-sizing: border-box;
@@ -223,7 +222,14 @@ html {
     background-image: url("img/search-icon.png");
     background-position: center;
     background-size: 18px 18px;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    cursor: pointer; }
+    .header-search input[type="submit"]:hover {
+      border: 1px solid black;
+      background-color: #eeeeee; }
+    .header-search input[type="submit"]:active {
+      border: 1px solid black;
+      background-color: #f0f0f0; }
 
 /* Header end */
 /* Section */
@@ -320,7 +326,7 @@ section.main-content {
   height: 80px; }
 .promotions footer {
   text-align: center;
-  margin-bottom: -0.6em; }
+  margin-bottom: -0.7em; }
   .promotions footer p {
     background-color: #dddddd;
     font-family: sans-serif;
@@ -462,7 +468,11 @@ aside {
   cursor: pointer;
   border: 1px solid #cccccc; }
   .top-sale button:hover {
-    border: 1px solid black; }
+    border: 1px solid black;
+    background-color: #b0b0b0; }
+  .top-sale button:active {
+    border: 1px solid black;
+    background-color: #dddddd; }
 
 .top-sale > div > div {
   padding: 10px;
@@ -493,7 +503,9 @@ body > footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: flex-start; }
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start; }
     body > footer article div {
       margin-top: 5px; }
     body > footer article h4 {
@@ -534,7 +546,14 @@ body > footer {
       margin-left: -1px;
       border: 1px solid #777777;
       color: white;
-      background-color: #777777; }
+      background-color: #777777;
+      cursor: pointer; }
+      body > footer .mailing input[type="submit"]:hover {
+        border: 1px solid black;
+        background-color: #555555; }
+      body > footer .mailing input[type="submit"]:active {
+        border: 1px solid black;
+        background-color: #888888; }
   body > footer footer {
     margin-top: 20px;
     text-align: center; }
